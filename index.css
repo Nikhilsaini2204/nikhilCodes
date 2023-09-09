@@ -2,7 +2,6 @@
   font-family: 'Rubik';
 }
 body {
-  
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -46,7 +45,6 @@ h2 {
   text-align:center;
 }
 
-/* Styling for wishlist page */
 
 #content{
   display: grid;
@@ -72,9 +70,6 @@ h2 {
   font-style: bold;
 }
 
-/* Grid layout */
-
-header { grid-area: header; }
 
 #products {
   grid-area: main;
@@ -103,24 +98,3 @@ footer { grid-area: footer; }
   'footer footer footer footer footer';
 }
 
-@media screen and (max-width: 768px) {
-  /* Adjust styles for screens up to 768px wide */
-  body {
-    font-size: 14px;
-  }
-
-  #content {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-
-@media screen and (max-width: 480px) {
-  /* Adjust styles for screens up to 480px wide */
-  body {
-    font-size: 12px;
-  }
-
-  #content {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-}
